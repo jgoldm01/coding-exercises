@@ -72,6 +72,7 @@ def BFS(start, fin, wordQueue, histQueue, acceptedWords, attemptedWords, isFinis
 				break
 			else:
 				word = start
+				hist = []
 		queueMutex.release()
 		for x in range(26):
 			char = chr(ord('A') + x)
